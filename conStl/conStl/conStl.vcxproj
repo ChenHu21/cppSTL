@@ -127,10 +127,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Hu_STL\Hu_STL\hu_file.h" />
+    <ClInclude Include="hu\hu_cin_cout.h" />
+    <ClInclude Include="hu\hu_file.h" />
+    <ClInclude Include="hu\hu_function.h" />
+    <ClInclude Include="hu\hu_iterator.h" />
+    <ClInclude Include="hu\hu_sstream.h" />
+    <ClInclude Include="hu\hu_string.h" />
+    <ClInclude Include="hu\hu_vector.h" />
     <ClInclude Include="hu_vector_stu.h" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="hu\hu_cin_cout.cpp" />
+    <ClCompile Include="hu\hu_iterator.cpp" />
     <ClCompile Include="mian.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

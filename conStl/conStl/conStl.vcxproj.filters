@@ -18,12 +18,39 @@
     <ClInclude Include="hu_vector_stu.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Hu_STL\Hu_STL\hu_file.h">
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hu\hu_cin_cout.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hu\hu_file.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hu\hu_function.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hu\hu_iterator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hu\hu_sstream.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hu\hu_string.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hu\hu_vector.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="mian.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hu\hu_cin_cout.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hu\hu_iterator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
