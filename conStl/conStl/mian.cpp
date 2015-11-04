@@ -1,4 +1,4 @@
-
+ï»¿
 //#include "hu_vector_stu.h"
 //#include "hu\hu_file.h"
 //#include "hu\hu_book.h"
@@ -7,10 +7,10 @@
 //#include "hu/hu_operator.h"
 //#include "hu/hu_list.h"
 //#include "hu/hu_queue_stack.h"
-//#include "hu/hu_ÓÅÏÈ¶ÓÁĞ.h"
+//#include "hu/hu_ä¼˜å…ˆé˜Ÿåˆ—.h"
 //#include "hu/hu_bitset.h"
-//#include "hu_¼¯ºÏ.h"
-#include "hu_Ó³Éä.h"
+//#include "hu_é›†åˆ.h"
+#include "hu_æ˜ å°„.h"
 void main()
 {
 	//hu_ofstream();
@@ -24,7 +24,7 @@ void main()
 	//hu_trait();
 	//cout<<MyBiger('a', 3);
 	//cout << MyBiger(3, 1);
-	//HU h("³Â½²Çå", 23);
+	//HU h("é™ˆè®²æ¸…", 23);
 	//cout<<MyBiger(h,21);
 
 
