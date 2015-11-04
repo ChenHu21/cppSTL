@@ -1,57 +1,57 @@
-#pragma once
+ï»¿#pragma once
 /*
-set/multiset ¶¼ÊÇ¼¯ºÏÀà£¬²î±ğÔÚÓÚ setÖĞ²»ÔÊĞíÓĞÖØ¸´ÔªËØ£¬multiset ÔÊĞíÓĞÖØ¸´
+set/multiset éƒ½æ˜¯é›†åˆç±»ï¼Œå·®åˆ«åœ¨äº setä¸­ä¸å…è®¸æœ‰é‡å¤å…ƒç´ ï¼Œmultiset å…è®¸æœ‰é‡å¤
 
-³£ÓÃº¯Êı£º
+å¸¸ç”¨å‡½æ•°ï¼š
 
-1 ¹¹Ôìº¯Êı£º
-set(const Pred& comp=Pred(),const A& al=A()) ´´½¨¿Õ¼¯ºÏ
-set(const set& x) ¸´ÖÆ¹¹Ôìº¯Êı
-set(const value_type* first,const_vaoue_type *last,const Pred& comp=Pred(),const A& al=A()) ¸´ÖÆ[first,last]Ö®¼äµÄÔªËØ¹¹³ÉĞÂ¼¯ºÏ
+1 æ„é€ å‡½æ•°ï¼š
+set(const Pred& comp=Pred(),const A& al=A()) åˆ›å»ºç©ºé›†åˆ
+set(const set& x) å¤åˆ¶æ„é€ å‡½æ•°
+set(const value_type* first,const_vaoue_type *last,const Pred& comp=Pred(),const A& al=A()) å¤åˆ¶[first,last]ä¹‹é—´çš„å…ƒç´ æ„æˆæ–°é›†åˆ
 
-multiset(const Pred& comp=Pred(),const A& al=A()) ´´½¨¿Õ¼¯ºÏ
-multiset(const set& x) ¸´ÖÆ¹¹Ôìº¯Êı
-multiset(const value_type* first,const_vaoue_type *last,const Pred& comp=Pred(),const A& al=A()) ¸´ÖÆ[first,last]Ö®¼äµÄÔªËØ¹¹³ÉĞÂ¼¯ºÏ
+multiset(const Pred& comp=Pred(),const A& al=A()) åˆ›å»ºç©ºé›†åˆ
+multiset(const set& x) å¤åˆ¶æ„é€ å‡½æ•°
+multiset(const value_type* first,const_vaoue_type *last,const Pred& comp=Pred(),const A& al=A()) å¤åˆ¶[first,last]ä¹‹é—´çš„å…ƒç´ æ„æˆæ–°é›†åˆ
 
-2 ´óĞ¡ÅĞ¶Ï¿Õº¯Êı
-int size()  ·µ»Ø¼¯ºÏÔªËØ¸öÊı
-bool empty() constÅĞ¶ÏÈİÆ÷ÊÇ·ñÎª¿Õ£¬·µ»Øtrue £¬¼¯ºÏÎª¿Õ
+2 å¤§å°åˆ¤æ–­ç©ºå‡½æ•°
+int size()  è¿”å›é›†åˆå…ƒç´ ä¸ªæ•°
+bool empty() conståˆ¤æ–­å®¹å™¨æ˜¯å¦ä¸ºç©ºï¼Œè¿”å›true ï¼Œé›†åˆä¸ºç©º
  
 
-3 Ôö¼Ó É¾³ıº¯Êı
-pair<iterator,bool>insert(const value_type& x) ²åÈëÔªËØx
-iterator insert(iterator it,const value_type& x) ÔÚµü´úÆ÷Ö¸Õëit´¦²åÈëÔªËØx
-void insert(const value_type* first,const_type* last) ²åÈë[first,last]µü´úÆ÷Ö¸ÕëÖ®¼äµÄÔªËØ
+3 å¢åŠ  åˆ é™¤å‡½æ•°
+pair<iterator,bool>insert(const value_type& x) æ’å…¥å…ƒç´ x
+iterator insert(iterator it,const value_type& x) åœ¨è¿­ä»£å™¨æŒ‡é’ˆitå¤„æ’å…¥å…ƒç´ x
+void insert(const value_type* first,const_type* last) æ’å…¥[first,last]è¿­ä»£å™¨æŒ‡é’ˆä¹‹é—´çš„å…ƒç´ 
 
-iterator erase(iterator it) É¾³ıµü´úÖ¸Õëit´¦ÔªËØ
-iterator erase(iterator first,iterator last) É¾³ı[first,last] µü´úÖ¸ÕëÖ®¼äµÄÔªËØ
-size_type erase(const Key& key) É¾³ıÔªËØÖµµÈÓÚ key µÄÔªËØ
+iterator erase(iterator it) åˆ é™¤è¿­ä»£æŒ‡é’ˆitå¤„å…ƒç´ 
+iterator erase(iterator first,iterator last) åˆ é™¤[first,last] è¿­ä»£æŒ‡é’ˆä¹‹é—´çš„å…ƒç´ 
+size_type erase(const Key& key) åˆ é™¤å…ƒç´ å€¼ç­‰äº key çš„å…ƒç´ 
 
-4 ±éÀúº¯Êı
-iterator begin() ·µ»ØÊ×ÔªËØµÄµü´úÆ÷Ö¸Õë
-iterator end() ·µ»ØÎ²ÔªËØºóµÄµü´úÆ÷Ö¸Õë
-reverse_iterator rbegin() ·µ»ØÎ²ÔªËØµÄÄæÏòµü´úÆ÷Ö¸Õë£¬ÓÃÓÚÄæÏò±éÀúÈİÆ÷
-reverse_iterator rend() ·µ»ØÊ×ÔªËØµÄÄæÏòµü´úÆ÷Ö¸Õë£¬ÓÃÓÚÄæÏò±éÀúÈİÆ÷
+4 éå†å‡½æ•°
+iterator begin() è¿”å›é¦–å…ƒç´ çš„è¿­ä»£å™¨æŒ‡é’ˆ
+iterator end() è¿”å›å°¾å…ƒç´ åçš„è¿­ä»£å™¨æŒ‡é’ˆ
+reverse_iterator rbegin() è¿”å›å°¾å…ƒç´ çš„é€†å‘è¿­ä»£å™¨æŒ‡é’ˆï¼Œç”¨äºé€†å‘éå†å®¹å™¨
+reverse_iterator rend() è¿”å›é¦–å…ƒç´ çš„é€†å‘è¿­ä»£å™¨æŒ‡é’ˆï¼Œç”¨äºé€†å‘éå†å®¹å™¨
 
-5 ²Ù×÷º¯Êı
-const_iterator lower_bound(const Key& key) ·µ»ØÈİÆ÷ÔªËØĞ¡ÓÚµÈÓÚ<=keyµÄµü´úÖ¸Õë£¬·ñÔò·µ»Øend()
-const_iterator upper_bound(const Key& key) ·µ»ØÈİÆ÷ÔªËØ´óÓÚµÈÓÚ>=keyµÄµü´úÖ¸Õë£¬·ñÔò·µ»Øend()
-const_iterator find(const Key& key) ²éÕÒ¹¦ÄÜ£¬·µ»ØÈİÆ÷ÔªËØ´óÓÚµÈÓÚ=keyµÄµü´úÖ¸Õë
-pair<const_iterator,const_iterator>equal_range(const Key& key) ·µ»ØÈİÆ÷ÖĞÔªËØµÈÓÚ=key µÄµü´úÖ¸Õë[first,last)
-int count(const Key& key) ·µ»ØÈİÆ÷ÖĞÔªËØÖµµÈÓÚkeyµÄÔªËØ¸öÊı
+5 æ“ä½œå‡½æ•°
+const_iterator lower_bound(const Key& key) è¿”å›å®¹å™¨å…ƒç´ å°äºç­‰äº<=keyçš„è¿­ä»£æŒ‡é’ˆï¼Œå¦åˆ™è¿”å›end()
+const_iterator upper_bound(const Key& key) è¿”å›å®¹å™¨å…ƒç´ å¤§äºç­‰äº>=keyçš„è¿­ä»£æŒ‡é’ˆï¼Œå¦åˆ™è¿”å›end()
+const_iterator find(const Key& key) æŸ¥æ‰¾åŠŸèƒ½ï¼Œè¿”å›å®¹å™¨å…ƒç´ å¤§äºç­‰äº=keyçš„è¿­ä»£æŒ‡é’ˆ
+pair<const_iterator,const_iterator>equal_range(const Key& key) è¿”å›å®¹å™¨ä¸­å…ƒç´ ç­‰äº=key çš„è¿­ä»£æŒ‡é’ˆ[first,last)
+int count(const Key& key) è¿”å›å®¹å™¨ä¸­å…ƒç´ å€¼ç­‰äºkeyçš„å…ƒç´ ä¸ªæ•°
 
-void swap(set& s) ½»»»µ¥¼¯ºÏÔªËØ
-void swap(multiset& s) ½»»»¶à¼¯ºÏÔªËØ
+void swap(set& s) äº¤æ¢å•é›†åˆå…ƒç´ 
+void swap(multiset& s) äº¤æ¢å¤šé›†åˆå…ƒç´ 
 
 */
 
 #include <iostream>
 #include <set>
 using namespace std;
-//ÈıÖÖĞÎ³É¼¯ºÏµÄ·½·¨
+//ä¸‰ç§å½¢æˆé›†åˆçš„æ–¹æ³•
 
 void show_set(set<int>& s)
-{//ÏÔÊ¾¼¯ºÏÊä³öº¯Êı
+{//æ˜¾ç¤ºé›†åˆè¾“å‡ºå‡½æ•°
 	set<int>::iterator it = s.begin();
 	while (it != s.end())
 	{
@@ -62,7 +62,7 @@ void show_set(set<int>& s)
 }
 
 void show_multiset(multiset<int>& s)
-{//ÏÔÊ¾¼¯ºÏÊä³öº¯Êı
+{//æ˜¾ç¤ºé›†åˆè¾“å‡ºå‡½æ•°
 	multiset<int>::iterator it = s.begin();
 	while (it != s.end())
 	{
@@ -75,26 +75,26 @@ void hu_create_set()
 {
 
 	int a[] = { 2,3,4,6,5,6,7,78,8,2 };
-	int alen = sizeof(a) / sizeof(int);//ÇóµÃ¼¯ºÏÔªËØ¸öÊı
-	multiset<int>m;//Ä¬ÈÏ¼¯ºÏÉıĞòÅÅĞò
+	int alen = sizeof(a) / sizeof(int);//æ±‚å¾—é›†åˆå…ƒç´ ä¸ªæ•°
+	multiset<int>m;//é»˜è®¤é›†åˆå‡åºæ’åº
 	for (int i = 0; i < alen; i++)
 	{
 		m.insert(a[i]);
 
 	}
-	cout << "Í¨¹ıinsert() Ìí¼Ó¼¯ºÏ£º" << endl;
+	cout << "é€šè¿‡insert() æ·»åŠ é›†åˆï¼š" << endl;
 	show_multiset(m);
 
-	multiset<int>m2(m);//¸´ÖÆ¼¯ºÏm
-	cout << "Í¨¹ı¸´ÖÆ¹¹Ôìº¯Êı multiset(const set& x)´´½¨¼¯ºÏ£º" << endl;
+	multiset<int>m2(m);//å¤åˆ¶é›†åˆm
+	cout << "é€šè¿‡å¤åˆ¶æ„é€ å‡½æ•° multiset(const set& x)åˆ›å»ºé›†åˆï¼š" << endl;
 	show_multiset(m2);
 
 	multiset<int>m3(a, a + alen);
-	cout << "Í¨¹ı¸´ÖÆ¹¹Ôìº¯Êımultiset(*first,*last) ´´½¨¼¯ºÏ£º" << endl;
+	cout << "é€šè¿‡å¤åˆ¶æ„é€ å‡½æ•°multiset(*first,*last) åˆ›å»ºé›†åˆï¼š" << endl;
 	show_multiset(m3);
 
 	set<int>m4(a,a+alen);
-	cout << "Í¨¹ı¸´ÖÆ¹¹Ôìº¯Êıset(*first,*last) ´´½¨¼¯ºÏ£º£¨Ã»ÓĞÖØ¸´ÔªËØ£©" << endl;
+	cout << "é€šè¿‡å¤åˆ¶æ„é€ å‡½æ•°set(*first,*last) åˆ›å»ºé›†åˆï¼šï¼ˆæ²¡æœ‰é‡å¤å…ƒç´ ï¼‰" << endl;
 	show_set(m4);
 
 
