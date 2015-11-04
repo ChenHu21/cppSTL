@@ -10,7 +10,8 @@
 //#include "hu/hu_优先队列.h"
 //#include "hu/hu_bitset.h"
 //#include "hu_集合.h"
-#include "hu_映射.h"
+//#include "hu_映射.h"
+#include "hu_迭代器.h"
 void main()
 {
 	//hu_ofstream();
@@ -44,8 +45,12 @@ void main()
 	//hu_read_binary();
 	//hu_create_set();
 	//hu_myset_test();
-	hu_create_map();
-
-
+	//hu_word_test();
+	
+	//hu_test_ostream_iterator();
+	//hu_test_istream_iterator();
+	//hu_test_STL();
+	//hu_test_reverse();
+	hu_fumction_test();
 	system("pause");
 }

@@ -72,6 +72,9 @@
     <ClInclude Include="hu_映射.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="hu_迭代器.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="mian.cpp">

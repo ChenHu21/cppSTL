@@ -144,6 +144,7 @@
     <ClInclude Include="hu\hu_优先队列.h" />
     <ClInclude Include="hu_vector_stu.h" />
     <ClInclude Include="hu_映射.h" />
+    <ClInclude Include="hu_迭代器.h" />
     <ClInclude Include="hu_集合.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
