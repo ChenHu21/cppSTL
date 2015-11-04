@@ -42,6 +42,33 @@
     <ClInclude Include="hu\hu_vector.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="hu\hu_book.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hu\hu_deque.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hu\hu_traits.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hu\hu_operator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hu\hu_list.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hu\hu_queue_stack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hu\hu_优先队列.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hu\hu_bitset.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hu_集合.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="mian.cpp">

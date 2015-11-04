@@ -127,14 +127,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="hu\hu_bitset.h" />
+    <ClInclude Include="hu\hu_book.h" />
     <ClInclude Include="hu\hu_cin_cout.h" />
+    <ClInclude Include="hu\hu_deque.h" />
     <ClInclude Include="hu\hu_file.h" />
     <ClInclude Include="hu\hu_function.h" />
     <ClInclude Include="hu\hu_iterator.h" />
+    <ClInclude Include="hu\hu_list.h" />
+    <ClInclude Include="hu\hu_operator.h" />
+    <ClInclude Include="hu\hu_queue_stack.h" />
     <ClInclude Include="hu\hu_sstream.h" />
     <ClInclude Include="hu\hu_string.h" />
+    <ClInclude Include="hu\hu_traits.h" />
     <ClInclude Include="hu\hu_vector.h" />
+    <ClInclude Include="hu\hu_优先队列.h" />
     <ClInclude Include="hu_vector_stu.h" />
+    <ClInclude Include="hu_集合.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>

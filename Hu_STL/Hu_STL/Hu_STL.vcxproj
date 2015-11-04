@@ -144,6 +144,7 @@
     <ClInclude Include="..\..\..\..\Visual Studio 2015\Projects\Project1\Project1\hu_sstream.h" />
     <ClInclude Include="..\..\..\..\Visual Studio 2015\Projects\Project1\Project1\hu_string.h" />
     <ClInclude Include="..\..\..\..\Visual Studio 2015\Projects\Project1\Project1\hu_vector.h" />
+    <ClInclude Include="hu_vector_student.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

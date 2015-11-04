@@ -52,5 +52,8 @@
     <ClInclude Include="..\..\..\..\Visual Studio 2015\Projects\Project1\Project1\hu_vector.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="hu_vector_student.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
