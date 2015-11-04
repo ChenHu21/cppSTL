@@ -9,7 +9,8 @@
 //#include "hu/hu_queue_stack.h"
 //#include "hu/hu_优先队列.h"
 //#include "hu/hu_bitset.h"
-#include "hu_集合.h"
+//#include "hu_集合.h"
+#include "hu_映射.h"
 void main()
 {
 	//hu_ofstream();
@@ -41,7 +42,9 @@ void main()
 	//hu_student_attend();
 	//hu_num_yasuo();
 	//hu_read_binary();
-	hu_create_set();
+	//hu_create_set();
+	//hu_myset_test();
+	hu_create_map();
 
 
 	system("pause");
